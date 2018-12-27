@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+   #list li a{
+	    color:gray;
+		font-size:12px;
+	 }
+   #main li a{
+      color:gray;
+	  font-size:18px;
+   }
+   /*子代选择器*/
+   div>span{
+      color:red;
+   }
+  </style>
+ </head>
+ <body>
+    <ul id="list">
+	   <li>
+	     <a href="#">美的电热水壶304不锈钢1.7L</a>
+	   </li>
+	   <li>
+	     <a href="#">苏泊尔电热水壶304不锈钢1.7L</a>
+	   </li>
+	   <li>
+	     <a href="#">九阳电热水壶304不锈钢1.7L</a>
+	   </li>
+	</ul>
+	<ul id="main">
+	   <li>
+	      <a href="">满105可用</a>
+	   </li>
+	   <li>
+	     <a href="">满199可用</a>
+	   </li>
+	   <li>
+	     <a href="">满99可用</a>
+	   </li>
+	</ul>
+
+	<div>
+	   <span>这是嵌套在div中的span元素</span>
+	   <p>
+	     <span>这是嵌套在div中的p元素中的span</span>
+	   </p>
+	</div>
+ </body>
+</html>

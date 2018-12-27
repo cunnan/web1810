@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+	
+<!--在网页中创建一个div，内容随意 -->
+<!-- 添加一个按钮，点击是获取div中文本并打印在控制台 -->
+<!-- 再添加一个按钮，点击是将div中文本内容修改 -->
+<div id="d1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae nihil odit modi totam quia ipsum id quae quo iure eos rerum natus eligendi blanditiis deserunt nemo eum est mollitia earum?</div>
+<input type="button" value="打印" onclick="show()">
+<input type="button" value="修改" onclick="update()">
+<input type="button" value="插入表格" onclick="insert()">
+<script>
+	function show(){
+		console.log(d1.innerHTML);
+	}
+	function update(){
+		d1.innerHTML="。。。。。。。。。。。";
+	}
+	function insert(){
+		d1.innerHTML=`<table border='1px'>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>5</td>
+			<td>6</td>
+		</tr>
+		<tr>
+			<td>7</td>
+			<td>8</td>
+			<td>9</td>
+		</tr>
+	</table>`;
+	}
+</script>
+
+
+<!-- 在网页中创建一个div。内容随意 -->
+<!-- 添加一个按钮，在div中动态生成一个3*3的，内容随意的表格 -->
+	
+	</body>
+</html>

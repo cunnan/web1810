@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <!-- 引入boot的文件，引入顺序有要求-->
+    <link rel="stylesheet" href="../css/bootstrap.css"/>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <h1>折叠导航栏</h1>
+    <div class="navbar navbar-expand-md bg-light
+    navbar-light">
+        <!-- 不被折叠的导航选项-->
+        <a href="#" class="navbar-brand">Boot中文网</a>
+        <!-- 小屏幕下最右侧的按钮：上面有三条横线-->
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#content">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- 导航栏中的菜单，小屏幕隐藏(垂直显示)，大屏幕横向显示-->
+        <div class="collapse" id="content">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">JQuery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">JavaScript</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">HTML/CSS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">BootStrap</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

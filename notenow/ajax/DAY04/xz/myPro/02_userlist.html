@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body onload="get_list()">
+		<table border="1px" width="800px">
+			<thead>
+				<tr>
+					<th>登录名称</th>
+					<th>电子邮箱</th>
+					<th>联系方式</th>
+					<th>真实姓名</th>
+					<th>用户性别</th>
+					<th>操作</th>
+				</tr>
+			</thead>
+			<tbody id="content"></tbody>
+		</table>
+		<script>
+			function get_list(){
+				//1.创建xhr
+				var xhr=new XMLHttpRequest();
+				//2.绑定监听
+				xhr.onreadystatechange=function(){
+					if(xhr.readyState==4&&xhr.status==200){
+						var result=xhr.responseText;
+						//jSOn解析
+						var list=JSON.parse(result);
+						//模板字符串
+						for(var i=0;i<list.length;i++){
+							var gender="";
+							if(list[i].gender==1){
+								gender="男";
+							}else if(list[i].gender==0){
+								gender="女";
+							}else{gender="不详";}
+							content.innerHTML+=`
+								<tr>
+								  <td>${list[i].uname}</td>
+								  <td>${list[i].email}</td>
+								  <td>${list[i].phone}</td>
+								  <td>${list[i].user_name}</td>
+								  <td>${gender}</td>
+								  <td>
+										<a href>删除</a>
+										<a href>修改</a>
+									</td>
+								</tr>
+							`;
+						}
+						//放在tbody中html代码
+//						var html="";
+//						for(var i=0;i<list.length;i++){
+//							html+="<tr>";//17:08下课，17:23上课
+//							html+="<td>"+list[i].uname+"</td>";
+//							html+="<td>"+list[i].email+"</td>";
+//							html+="<td>"+list[i].phone+"</td>";
+//						html+="<td>"+list[i].user_name+"</td>";
+//							var gender="";
+//							if(list[i].gender==1){
+//							  gender="男";
+//							}else if(list[i].gender==0){
+//								gender="女";
+//							}else{
+//								gender="不详";
+//							}
+//							html+="<td>"+gender+"</td>";
+//							html+="<td>";
+//							html+="<a href>删除</a>";
+//							html+="<a href>修改</a>";
+//							html+="</td>";
+//							html+="</tr>";
+//						}
+//						content.innerHTML=html;
+					}
+				}
+				//3.创建请求，打开链接
+				xhr.open("get","/mypro/userlist",true);
+				//4.发送请求
+				xhr.send(null);
+			}
+		</script>
+	</body>
+</html>

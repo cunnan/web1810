@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+     .myColor{
+	   color:blue;
+	 }
+	 p.myColor{
+	   font-size:40px;
+	 }
+   /*ID选择器*/
+   #first{
+     background:yellow;
+   }
+   #a1{
+     background:pink;
+   }
+
+   /*用群组选择器将所有的字体设为斜体 font-style:italic;*/
+   .myColor,span,b{font-style:italic;}
+  </style>
+ </head>
+ <body>
+    <!--在网页中添加2个h2元素和1个p元素，内容随意，用类选择器设置所有文本颜色为蓝色，然后用分类选择器设置p元素的字体大小为40px。-->
+	<h2 id="first" class="myColor">标题元素1</h2>
+	<h2 id="a1" class="myColor">标题元素2</h2>
+	<p class="myColor">段落标记</p>
+	<span>sssssss</span>
+	<b>bbbbbbbbb</b>
+
+ </body>
+</html>

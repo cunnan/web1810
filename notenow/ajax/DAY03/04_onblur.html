@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body onload="pwd_focus()">
+		<div>用户名称：
+		<input type="text" id="uname" onblur="txt_blur()" onfocus="text_focus()">
+		<span id="showUname"></span>
+		</div>
+		<div>用户密码：<input type="password" id="upwd" onfocus="pwd_focus()">
+		<span id="showPwd"></span>
+		</div>
+		<script>
+			function text_focus(){
+				showUname.innerHTML="用户名不能为空";
+			}
+			function pwd_focus(){
+				showPwd.innerHTML="密码长度为6~12位";
+			}
+			function txt_blur(){
+				//获得文本框value
+				var user_name=uname.value;
+				//判断value是否为空,把对应的文本提示写入span
+				if(user_name==""){
+					showUname.innerHTML="用户名不能为空";
+				}else{
+					showUname.innerHTML="通过";
+				}
+				
+			}
+		</script>
+	</body>
+</html>

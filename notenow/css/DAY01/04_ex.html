@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			a:link{color:#000;text-decoration:none;}
+			a:hover{color:#f00;}
+			a:active{color:#ff0;}
+			a:visited{color:orange;}
+			input{color:gray;font-style:italic}
+			input:focus{color:#f00}
+			input:active{font-style:normal;}
+			/*权值*/
+			.content{background:#0ff;color:#f00;}
+			#d1{background:#000;color:#fff;}
+			div{background:#aff;color:#faa;}
+			div .c2 #d3{color:#f00}
+			#d1 .c2 span{color:#0ff}
+			#d1,.c2,.c3{color:#f0f}
+			.s1{color:red}
+			div>div>div>div>div>div>div>div>div>div>span{color:yellow}
+		</style>
+	</head>
+	<body>
+		<div>
+			<div>
+				<div>
+					<div>
+						<div>
+							<div>
+								<div>
+									<div>
+										<div>
+											<div><span class="s1"></span>1111</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="c1" id="d1">
+		  <div class="c2" id="d2">
+			  <span class="c3" id="d3">买乐佛伦</span>
+			</div>
+		</div>
+
+		<br>	<br>	<br>	<br>
+		<hr>
+		<br>	<br>	<br>	<br>
+		<div id="d1" class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut odio nisi minima nobis modi maiores id suscipit excepturi assumenda quaerat unde itaque consequatur omnis ipsa dignissimos repellat aliquam hic sequi.</div>
+		<br>	<br>	<br>	<br>
+		<hr>
+		<br>	<br>	<br>	<br>
+
+
+	  <input type="text">
+		<a href="http://www.tmooc.cn">TMOOC</a>
+	</body>
+</html>

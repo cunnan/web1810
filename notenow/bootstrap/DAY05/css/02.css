@@ -1,0 +1,66 @@
+.mybtn {
+  display: block;
+  background: #0aa1ed;
+  color: #fff;
+  text-decoration: none;
+  width: 8rem;
+  height: 2.5rem;
+  text-align: center;
+  line-height: 2.5rem;
+  border-radius: 2rem;
+  font-size: 8rem; }
+  .mybtn:hover {
+    color: #f10215; }
+
+p.p1 {
+  width: 100px;
+  hiehgt: 20px; }
+
+div {
+  box-shadow: 1px 0 50px 10px gray; }
+
+p {
+  box-shadow: 1px 0 50px 10px gray; }
+
+ul {
+  list-style: none; }
+  ul li {
+    padding: 5px;
+    border: 1px solid #ff0;
+    border-radius: 2px; }
+    ul li a {
+      color: gray;
+      text-decoration: none; }
+      ul li a:hover {
+        color: #f00; }
+
+ul li a {
+  color: #f00; }
+  ul li a:hover {
+    color: #0f0; }
+  ul li a:visited {
+    color: #00f; }
+
+#content a {
+  color: #faa; }
+  #content a:hover {
+    color: #afa; }
+  #content a:visited {
+    color: #aaf; }
+
+.my_round, .rounded-shadow {
+  border: 1px solid #f00;
+  border-radius: 50%; }
+
+.rounded-shadow {
+  box-shadow: 0 0 10px; }
+
+.my-border, .my-bottom-border {
+  border: 1px solid transparent;
+  width: 400px;
+  margin-left: 20px; }
+
+.my-bottom-border {
+  border-bottom-color: #f00; }
+  .my-bottom-border:hover {
+    border-bottom-color: #00f; }

@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			div{
+				width:150px;
+				height:150px;
+				margin:5px;
+			}
+			#box1{
+				border:4px solid transparent;
+				border-color:#f00;
+				border-width:10px;
+				border-radius:50%;
+			}
+			#box2{
+				border:4px dotted #faa;
+			}
+			#box3{
+				border:4px dashed #ffa;
+			}
+			#box4{
+				border:4px double #faf;
+			}
+			#content{/*10:58下课，11:13上课*/
+				width:200px;height:200px;
+				border-top:5px solid orange;
+				border-right:3px dotted #f00;
+				border-bottom:7px dashed #0ff;
+				border-left:11px double #f0f;
+				border-top-style:double;
+				border-top-color:#44f;
+			}
+			#test{
+				width:0;
+				height:0;
+				border:30px solid transparent;
+				border-top-color:#aaa;
+/*				border-right-color:#aaf;*/
+/*				border-bottom-color:#ffa;*/
+/*				border-left-color:#aff;*/
+
+			}
+			h1{
+				width:400px;height:400px;
+				background:#ff0;
+				border-radius:20px;
+				border-top-left-radius:50%;
+				border-bottom-right-radius:50%;
+				box-shadow:10px 10px 30px 30px #000 inset;
+			}	
+			input{
+				outline:3px solid #f00;
+				border:5px solid #ff0;
+			}
+		</style>
+	</head>
+	<body>
+	<input type="text">
+	<h1></h1>
+	<br><br>
+	<hr>
+	<br><br>
+	<div id="test"></div>
+		<br><br>
+	<hr>
+	<br><br>
+		<div id="content"></div>
+	<br><br>
+	<hr>
+	<br><br>
+		<div id="box1"></div>
+		<div id="box2"></div>
+		<div id="box3"></div>
+		<div id="box4"></div>
+	</body>
+</html>

@@ -1,0 +1,14 @@
+.bg-menubar{
+    background: linear-gradient(to bottom,#f0f0f0,#e0e0e0);
+}
+.my_input-w{
+    width: 0.6rem;
+    padding:0;
+}
+.input-group-text{
+    width:40%;
+}
+.my_cart_btn{
+    width: 1rem;
+}
+.list-group>li{border-top:1px dashed #aaa;}

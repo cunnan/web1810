@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			#parent{height:300px;width:300px;
+			background:#faa;}
+			#d1{height:150px;width:150px;
+			background:#ffa;margin-top:10px;}
+			#parent::before{
+				content:"";
+				display:table;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="parent">
+			<div id="d1"></div>
+		</div>
+	</body>
+</html>

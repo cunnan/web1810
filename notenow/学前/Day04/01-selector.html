@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+  /*1.通用选择器*/
+     /**{
+	   color:blue;
+	   font-size:30px;
+	 }*/
+  /*2.元素选择器*/
+   /* body{
+	   color:blue;
+	   font-size:30px;
+	 }*/
+   /* div{
+	  background:gray;
+	}*/
+   /*类选择器*/
+   .my_Color{
+      color:red;
+   }
+   .myfont{
+     font-size:50px;
+   }
+
+   div.my_Color{
+     background:yellow;
+   }
+   /*id选择器*/
+   #s1{
+      font-size:70px;
+   }
+   #p1{
+     background:green;
+   }
+
+   /*后代选择器*/
+   div p span{
+            color:purple;
+            font-size:50px;
+   }
+
+   ul.product li p a{
+     color:white;
+	 background:red;
+   }
+
+   div.test p a.first{
+      color:blue;
+	  background:yellow;
+	  font-size:32px;
+   }
+  </style>
+ </head>
+ <body>
+     <div class="my_Color myfont">锄禾日当午</div>
+	 <p id="p1" class="my_Color">汗滴禾下土</p>
+	 <span id="s1">谁知盘中餐</span>
+	 <div class="myfont">粒粒皆辛苦</div>
+	 
+	 <div>
+	    div元素
+	    <p>
+		  p元素
+		   <span>span元素</span>
+		</p>
+	 </div>
+
+
+	 <ul class="nav">
+	 	<li><a href="">京东超市</a></li>
+		<li><a href="">京东生鲜</a></li>
+		<li><a href="">京东白条</a></li>
+	 </ul>
+	 <ul class="product">
+	 	<li><p><a href="">￥1988.00</a></p></li>
+		<li><p><a href="">￥200.00</a></p></li>
+		<li><p><a href="">￥1988.00</a></p></li>
+		<li><p><a href="">￥200.00</a></p></li>
+		<li><p><a href="">￥1988.00</a></p></li>
+		<li><p><a href="">￥200.00</a></p></li>
+	 </ul>
+     <!--用后代选择器设置第一个a元素中的文本颜色为蓝色，背景为黄色，大小32px-->
+     <div class="test">
+	     <p>
+		    <a href="" class="first">aaa</a>
+		 </p>
+	     <p>
+		   <a href="">bbb</a>
+		 </p>
+	     <p>
+		   <a href="">ccc</a>
+		 </p>
+	 </div>
+	 
+ </body>
+</html>
