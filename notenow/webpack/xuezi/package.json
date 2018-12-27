@@ -1,0 +1,29 @@
+{
+  "name": "xuezi",
+  "version": "1.0.0",
+  "description": "exercise project for tedu students",
+  "main": "main.js",
+  "scripts": {
+    "test": "node  ./test.js",
+    "start": "node  ./main.js",
+    "qidong": "node  ./main.js",
+    "stop": "node  ./stop.js",
+    "rebuild": "node  ./bin/build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lwh/xz.git"
+  },
+  "keywords": [
+    "tedu",
+    "exercise",
+    "node",
+    "webpack"
+  ],
+  "author": "LiWenhua",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lwh/xz/issues"
+  },
+  "homepage": "https://github.com/lwh/xz#readme"
+}
